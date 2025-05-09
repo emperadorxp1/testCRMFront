@@ -10,15 +10,6 @@
     "dev": "quasar dev",
     "build": "quasar build -m spa"
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/spa"
-      }
-    }
-  ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ],
